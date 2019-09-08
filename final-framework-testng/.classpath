@@ -19,5 +19,16 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/SurbhiDevpura/Documents/Surbhi/Automation/Selenium-Upskill/Selenium Jars/jar_filesExtentReports/bson-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SurbhiDevpura/Documents/Surbhi/Automation/Selenium-Upskill/Selenium Jars/jar_filesExtentReports/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SurbhiDevpura/Documents/Surbhi/Automation/Selenium-Upskill/Selenium Jars/jar_filesExtentReports/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SurbhiDevpura/Documents/Surbhi/Automation/Selenium-Upskill/Selenium Jars/jar_filesExtentReports/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SurbhiDevpura/Documents/Surbhi/Automation/Selenium-Upskill/Selenium Jars/jar_filesExtentReports/mongodb-driver-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SurbhiDevpura/Documents/Surbhi/Automation/Selenium-Upskill/Selenium Jars/jar_filesExtentReports/mongodb-driver-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SurbhiDevpura/Documents/Surbhi/Automation/Selenium-Upskill/Selenium Jars/jar_filesExtentReports/sqlite-jdbc-3.8.11.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SurbhiDevpura/Documents/Surbhi/Automation/Selenium-Upskill/Selenium Jars/jxl/jar_files/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SurbhiDevpura/Documents/Surbhi/Automation/Selenium-Upskill/Selenium Jars/TestNG_6.9.10/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SurbhiDevpura/Documents/Surbhi/Automation/Selenium-Upskill/Selenium Jars/TestNG_6.9.10/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SurbhiDevpura/Documents/Surbhi/Automation/Selenium-Upskill/Selenium Jars/TestNG_6.9.10/testng-6.9.10.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
