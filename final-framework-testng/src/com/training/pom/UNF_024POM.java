@@ -1,6 +1,7 @@
 package com.training.pom;
 
-import java.awt.List;
+//import java.awt.List;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import java.util.*;
+//import java.util.*;
 
 public class UNF_024POM {
 	
@@ -115,17 +116,17 @@ public class UNF_024POM {
 		List ListOptionExp = (List) Arrays.asList(values); */
  	
 		Select sel = new Select(GroupBy);
-/*		Collection<WebElement> options =  sel.getOptions();
-		if(ListOptionExp.equals(options))
-			
-			System.out.println("options are correctly matched");
-		
-		for(WebElement option:options){
-			String ListOptionAct = option.getText();
-			System.out.println(ListOptionAct);
-			}*/
+		List<WebElement> options =  sel.getOptions();		
+		System.out.println("Size is: "+options.size());
+		for(int i=0;i<options.size();i++){
+			System.out.println("Options are: "+options.get(i).getText());
+		}
 					
 		sel.selectByVisibleText("Weeks");
+		
+/*		if(ListOptionExp.equals(options))
+			
+			System.out.println("options are correctly matched");*/
 		/*String WeekTextAct = this.GroupBy.getText();
 		Assert.assertEquals(WeekTextAct, WeekTextExp);		*/	
 	}

@@ -45,6 +45,8 @@ public class GenericMethods {
 			element = driver.findElement(By.linkText(locator));
 		}else if(type.equals("tagName")){
 			element = driver.findElement(By.tagName(locator));
+		}else if(type.equals("partialLinkText")){
+			element = driver.findElement(By.partialLinkText(locator));
 		}
 		if(checkSingleEntry(locator, type)){
 			System.out.println("Element Found and Returned");
@@ -73,6 +75,8 @@ public class GenericMethods {
 			return driver.findElements(By.linkText(locator));
 		}else if(type.equals("tagName")){
 			return driver.findElements(By.tagName(locator));
+		}else if(type.equals("partialLinkText")){
+			return driver.findElements(By.partialLinkText(locator));
 		}
 		// other TODO 
 		return null;

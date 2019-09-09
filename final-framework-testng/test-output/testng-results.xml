@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33310" started-at="2019-09-08T09:18:47Z" finished-at="2019-09-08T09:19:20Z">
+  <suite name="Default suite" duration-ms="52990" started-at="2019-09-09T11:58:47Z" finished-at="2019-09-09T11:59:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33310" started-at="2019-09-08T09:18:47Z" finished-at="2019-09-08T09:19:20Z">
-      <class name="com.training.sanity.tests.TC024ShippingDetailsFilter">
-        <test-method status="PASS" signature="CaptureReports()[pri:0, instance:com.training.sanity.tests.TC024ShippingDetailsFilter@5ba23b66]" name="CaptureReports" is-config="true" duration-ms="203" started-at="2019-09-08T14:48:47Z" finished-at="2019-09-08T14:48:47Z">
+    <test name="Default test" duration-ms="52990" started-at="2019-09-09T11:58:47Z" finished-at="2019-09-09T11:59:40Z">
+      <class name="com.training.sanity.tests.TC047OrderFilter">
+        <test-method status="PASS" signature="CaptureReports()[pri:0, instance:com.training.sanity.tests.TC047OrderFilter@5ba23b66]" name="CaptureReports" is-config="true" duration-ms="282" started-at="2019-09-09T17:28:47Z" finished-at="2019-09-09T17:28:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CaptureReports -->
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TC024ShippingDetailsFilter@5ba23b66]" name="setUpBeforeClass" is-config="true" duration-ms="11998" started-at="2019-09-08T14:48:47Z" finished-at="2019-09-08T14:48:59Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TC047OrderFilter@5ba23b66]" name="setUpBeforeClass" is-config="true" duration-ms="7140" started-at="2019-09-09T17:28:47Z" finished-at="2019-09-09T17:28:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:com.training.sanity.tests.TC024ShippingDetailsFilter@5ba23b66]" name="validLoginTest" duration-ms="3274" started-at="2019-09-08T14:48:59Z" finished-at="2019-09-08T14:49:02Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:com.training.sanity.tests.TC047OrderFilter@5ba23b66]" name="validLoginTest" duration-ms="1714" started-at="2019-09-09T17:28:54Z" finished-at="2019-09-09T17:28:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="ShippingDetailsFilterTest()[pri:2, instance:com.training.sanity.tests.TC024ShippingDetailsFilter@5ba23b66]" name="ShippingDetailsFilterTest" duration-ms="15663" started-at="2019-09-08T14:49:02Z" finished-at="2019-09-08T14:49:18Z">
+        <test-method status="PASS" signature="TC047OrderFilterTest()[pri:2, instance:com.training.sanity.tests.TC047OrderFilter@5ba23b66]" name="TC047OrderFilterTest" duration-ms="42453" started-at="2019-09-09T17:28:56Z" finished-at="2019-09-09T17:29:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ShippingDetailsFilterTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TC024ShippingDetailsFilter@5ba23b66]" name="tearDown" is-config="true" duration-ms="1752" started-at="2019-09-08T14:49:18Z" finished-at="2019-09-08T14:49:20Z">
+        </test-method> <!-- TC047OrderFilterTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TC047OrderFilter@5ba23b66]" name="tearDown" is-config="true" duration-ms="1016" started-at="2019-09-09T17:29:38Z" finished-at="2019-09-09T17:29:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeReports()[pri:0, instance:com.training.sanity.tests.TC024ShippingDetailsFilter@5ba23b66]" name="closeReports" is-config="true" duration-ms="392" started-at="2019-09-08T14:49:20Z" finished-at="2019-09-08T14:49:20Z">
+        <test-method status="PASS" signature="closeReports()[pri:0, instance:com.training.sanity.tests.TC047OrderFilter@5ba23b66]" name="closeReports" is-config="true" duration-ms="375" started-at="2019-09-09T17:29:39Z" finished-at="2019-09-09T17:29:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReports -->
-      </class> <!-- com.training.sanity.tests.TC024ShippingDetailsFilter -->
+      </class> <!-- com.training.sanity.tests.TC047OrderFilter -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
