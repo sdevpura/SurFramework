@@ -48,13 +48,12 @@ public class LoginExcelTest {
 		driver.quit();
 	}
 
-	@Test(dataProvider = "excel-inputs", dataProviderClass = LoginDataProviders.class)
+	@Test(dataProvider = "excel-inputs1", dataProviderClass = LoginDataProviders.class)
 	public void loginDBTest(String userName, String password) {
 		loginPOM.sendUserName(userName);
 		loginPOM.sendPassword(password);
 		loginPOM.clickLoginBtn();
 		screenShot.captureScreenShot(userName);
-
 	}
 
 }

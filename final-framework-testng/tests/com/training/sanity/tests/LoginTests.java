@@ -35,7 +35,7 @@ public class LoginTests {
 	@BeforeTest
 	public void CaptureReports(){
 			
-		extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReports/UNF_047.html", true); //to set the output for reports
+		extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReports/UNF_048.html", true); //to set the output for reports
 		extent.loadConfig(new File((System.getProperty("user.dir"))+"extent-config.xml"));
 		logger = extent.startTest("CaptureReports");
 		logger.log(LogStatus.PASS, "Before Test logger: Logger initialization");

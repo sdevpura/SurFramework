@@ -1,11 +1,17 @@
 package com.training.pom;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -17,31 +23,31 @@ public class UNF_046POM {
 		this.driver = driver; 
 		PageFactory.initElements(driver, this);
 	}
-		
+	//DO NOT EVALUATE!!!!!! Scripting is in Progress.
+	
+	
 		//TC UNF_046 elements
 		
-		@FindBy(xpath="//*[@id='sale']/a/i")
-		private WebElement cartIcon; 
+		@FindBy(xpath="//*[@id='catalog']/a/i")
+		private WebElement catalog; 
 		
-		@FindBy(xpath="//*[@id='sale']/ul/li[1]/a")
-		private WebElement orders; 
+		@FindBy(css="input#input-name1")  
+		private WebElement categoryNameTextBox;
+
 		
-		@FindBy(xpath="//*[@id='form-order']/div/table/tbody/tr[1]/td[8]/a[2]")
-		private WebElement editBtn;
+		
+		//TC UNF_046 methods
+		
+				
+		
 		
 		
 
+		
+		
+		
+		
 
-	//TC UNF_046 methods
-		
-		
-		public void clickcartIcon() {
-			this.cartIcon.click(); 
-		}
-		
-		public void clickOrders() {
-			this.orders.click(); 
-		}
 		
 		
 }
