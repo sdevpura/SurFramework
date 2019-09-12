@@ -30,6 +30,8 @@ public class LoginDataProviders {
 		return result;
 	}
 	
+
+	
 	@DataProvider(name = "excel-inputs")
 	public static Object[][] getExcelData(){
 		String fileName ="C:\\Users\\SurbhiDevpura\\Desktop\\Test Data.xlsx"; 

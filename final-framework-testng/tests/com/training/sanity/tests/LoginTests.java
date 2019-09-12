@@ -48,7 +48,8 @@ public class LoginTests {
 		properties.load(inStream);
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		loginPOM = new LoginPOM(driver); 
-		baseUrl = properties.getProperty("baseURL");
+		//baseUrl = properties.getProperty("baseURL"); //Use this code for all TCs except UNF_046 (Use line 52 for UNF_046)
+		baseUrl = properties.getProperty("baseURL1"); //Use this code only for TC UNF_046 (Medium Level)
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
 		driver.get(baseUrl);

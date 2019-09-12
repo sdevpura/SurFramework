@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63643" started-at="2019-09-12T10:09:04Z" finished-at="2019-09-12T10:10:07Z">
+  <suite name="Default suite" duration-ms="49916" started-at="2019-09-12T14:00:21Z" finished-at="2019-09-12T14:01:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63643" started-at="2019-09-12T10:09:04Z" finished-at="2019-09-12T10:10:07Z">
-      <class name="com.training.sanity.tests.TC048AddCategoryAndProduct">
-        <test-method status="PASS" signature="CaptureReports()[pri:0, instance:com.training.sanity.tests.TC048AddCategoryAndProduct@5ba23b66]" name="CaptureReports" is-config="true" duration-ms="193" started-at="2019-09-12T15:39:04Z" finished-at="2019-09-12T15:39:04Z">
+    <test name="Default test" duration-ms="49916" started-at="2019-09-12T14:00:21Z" finished-at="2019-09-12T14:01:11Z">
+      <class name="com.training.sanity.tests.TC046EditOrder">
+        <test-method status="PASS" signature="CaptureReports()[pri:0, instance:com.training.sanity.tests.TC046EditOrder@5ba23b66]" name="CaptureReports" is-config="true" duration-ms="270" started-at="2019-09-12T19:30:21Z" finished-at="2019-09-12T19:30:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CaptureReports -->
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TC048AddCategoryAndProduct@5ba23b66]" name="setUpBeforeClass" is-config="true" duration-ms="6790" started-at="2019-09-12T15:39:04Z" finished-at="2019-09-12T15:39:11Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TC046EditOrder@5ba23b66]" name="setUpBeforeClass" is-config="true" duration-ms="7320" started-at="2019-09-12T19:30:22Z" finished-at="2019-09-12T19:30:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:com.training.sanity.tests.TC048AddCategoryAndProduct@5ba23b66]" name="validLoginTest" duration-ms="1626" started-at="2019-09-12T15:39:11Z" finished-at="2019-09-12T15:39:12Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:com.training.sanity.tests.TC046EditOrder@5ba23b66]" name="validLoginTest" duration-ms="2049" started-at="2019-09-12T19:30:29Z" finished-at="2019-09-12T19:30:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="TC048AddCategoryAndProductTest()[pri:2, instance:com.training.sanity.tests.TC048AddCategoryAndProduct@5ba23b66]" name="TC048AddCategoryAndProductTest" duration-ms="53707" started-at="2019-09-12T15:39:12Z" finished-at="2019-09-12T15:40:06Z">
+        <test-method status="PASS" signature="TC046EditOrderTest()[pri:2, instance:com.training.sanity.tests.TC046EditOrder@5ba23b66]" name="TC046EditOrderTest" duration-ms="38850" started-at="2019-09-12T19:30:31Z" finished-at="2019-09-12T19:31:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC048AddCategoryAndProductTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TC048AddCategoryAndProduct@5ba23b66]" name="tearDown" is-config="true" duration-ms="1006" started-at="2019-09-12T15:40:06Z" finished-at="2019-09-12T15:40:07Z">
+        </test-method> <!-- TC046EditOrderTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TC046EditOrder@5ba23b66]" name="tearDown" is-config="true" duration-ms="1000" started-at="2019-09-12T19:31:10Z" finished-at="2019-09-12T19:31:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeReports()[pri:0, instance:com.training.sanity.tests.TC048AddCategoryAndProduct@5ba23b66]" name="closeReports" is-config="true" duration-ms="313" started-at="2019-09-12T15:40:07Z" finished-at="2019-09-12T15:40:07Z">
+        <test-method status="PASS" signature="closeReports()[pri:0, instance:com.training.sanity.tests.TC046EditOrder@5ba23b66]" name="closeReports" is-config="true" duration-ms="421" started-at="2019-09-12T19:31:11Z" finished-at="2019-09-12T19:31:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReports -->
-      </class> <!-- com.training.sanity.tests.TC048AddCategoryAndProduct -->
+      </class> <!-- com.training.sanity.tests.TC046EditOrder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
