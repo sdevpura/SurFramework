@@ -31,7 +31,7 @@ public class TC046EditOrder extends LoginTests {
 		UNF046POMDriver.ScrollPage();
 		UNF046POMDriver.selectShippingAdd();
 		UNF046POMDriver.ScrollPage();
-		UNF046POMDriver.save(); // Note: On saving, application is giving warning of Payment method required even though Payment Method is set 
+		UNF046POMDriver.save(); 
 		
 		
 

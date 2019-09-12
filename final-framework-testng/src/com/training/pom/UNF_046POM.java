@@ -83,7 +83,6 @@ public class UNF_046POM {
 		@FindBy(xpath="//*[@id='button-save']")
 		private WebElement saveBtn;
 		
-		
 		@FindBy(xpath="//*[@id='input-shipping-method']")
 		private WebElement shipping;
 		
@@ -94,10 +93,14 @@ public class UNF_046POM {
 		private WebElement applyPaymentMethod;
 		
 		
-		
-		
 		@FindBy(xpath="//*[@id='input-payment-method']")
 		private WebElement payment;
+		
+		@FindBy(xpath="//*[@id='content']/div[2]/div[1]")
+		private WebElement messageSuccess;		
+		
+		
+
 		
 		
 		//TC UNF_046 methods
@@ -174,7 +177,7 @@ public class UNF_046POM {
 		
 		
 		public void enterProduct() throws InterruptedException{
-			this.chooseProductTextBox.sendKeys("sports wear");
+			this.chooseProductTextBox.sendKeys("Blazer Girls(7-8)");
 			Thread.sleep(3000);
 			this.chooseList.click();
 				}
@@ -204,6 +207,14 @@ public class UNF_046POM {
 		public void save() throws InterruptedException{
 			this.saveBtn.click();			
 			Thread.sleep(3000);
+			
+			String alertTextAct = this.messageSuccess.getText();
+			String alertTextExp = "Success";
+			if(alertTextAct.contains(alertTextExp))
+				System.out.println("Product Added successfully");
+			else
+				System.out.println("Product not added");	
+			
 		}
 		
 		
