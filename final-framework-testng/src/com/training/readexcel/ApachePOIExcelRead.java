@@ -42,7 +42,7 @@ public class ApachePOIExcelRead {
 			
 			// Iterate through each rows one by one
 			Iterator<Row> rowIterator = sheet.iterator();
-			 list1 = new String[rowTotal][2];
+			 list1 = new String[rowTotal][4];
 			 
 			while (rowIterator.hasNext()) {
 				Row row = rowIterator.next();

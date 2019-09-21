@@ -5,7 +5,9 @@ import java.util.List;
 import org.testng.annotations.DataProvider;
 
 import com.training.bean.LoginBean;
+import com.training.bean.UNF_076Bean;
 import com.training.dao.ELearningDAO;
+import com.training.dao.UNF_076DAO;
 import com.training.readexcel.ApachePOIExcelRead;
 import com.training.readexcel.ReadExcel;
 
@@ -14,14 +16,16 @@ public class LoginDataProviders {
 	@DataProvider(name = "db-inputs")
 	public static Object [][] getDBData() {
 
-		List<LoginBean> list = new ELearningDAO().getLogins(); 
+		List<UNF_076Bean> list = new UNF_076DAO().getLogins(); 
 		
 		Object[][] result = new Object[list.size()][]; 
 		int count = 0; 
-		for(LoginBean temp : list){
-			Object[]  obj = new Object[2]; 
+		for(UNF_076Bean temp : list){
+			Object[]  obj = new Object[4]; 
 			obj[0] = temp.getUserName(); 
 			obj[1] = temp.getPassword(); 
+			obj[2] = temp.getProductName();
+			obj[3] = temp.getQuantity();
 			
 			result[count ++] = obj; 
 		}
@@ -45,6 +49,13 @@ public class LoginDataProviders {
 		String SheetName = "Sheet1";
 		return new ApachePOIExcelRead().getExcelContent(fileName,SheetName); 
 	}
+	
+/*	@DataProvider(name = "UNF078excel-inputs")
+	public static Object[][] getExcelDataUNF078(){
+		String fileName ="C:\\Users\\SurbhiDevpura\\Desktop\\Test Data.xlsx"; 
+		String SheetName = "Sheet1";
+		return new ApachePOIExcelRead().getExcelContent(fileName,SheetName); 
+	}*/
 	
 	@DataProvider(name = "xls-inputs")
 	public Object[][] getXLSData(){
