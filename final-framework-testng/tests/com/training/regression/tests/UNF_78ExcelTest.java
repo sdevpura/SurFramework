@@ -44,7 +44,7 @@ public class UNF_78ExcelTest {
 		driver.quit();
 	}
 	
-	@Test(dataProvider = "excel-inputs1", dataProviderClass = LoginDataProviders.class)
+	@Test(dataProvider = "UNF078excel-inputs", dataProviderClass = LoginDataProviders.class)
 	public void UNF078ExcelTest(String userName, String password, String catName, String catMetaTag, String productName, String productMetaTag, String catList) throws InterruptedException{
 		UNF_078POM.sendUserName(userName);
 		UNF_078POM.sendPassword(password);

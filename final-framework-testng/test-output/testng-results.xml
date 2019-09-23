@@ -1,212 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="294328" started-at="2019-09-21T07:56:49Z" finished-at="2019-09-21T08:01:44Z">
+  <suite name="Default suite" duration-ms="1009" started-at="2019-09-23T07:23:08Z" finished-at="2019-09-23T07:23:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="294328" started-at="2019-09-21T07:56:49Z" finished-at="2019-09-21T08:01:44Z">
+    <test name="Default test" duration-ms="1009" started-at="2019-09-23T07:23:08Z" finished-at="2019-09-23T07:23:09Z">
       <class name="com.training.regression.tests.UNF_78ExcelTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2019-09-21T13:26:50Z" finished-at="2019-09-21T13:26:50Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="setUpBeforeClass" is-config="true" duration-ms="25" started-at="2019-09-23T12:53:08Z" finished-at="2019-09-23T12:53:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="setUp" is-config="true" duration-ms="9757" started-at="2019-09-21T13:26:50Z" finished-at="2019-09-21T13:27:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UNF078ExcelTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="UNF078ExcelTest" duration-ms="61157" started-at="2019-09-21T13:27:00Z" data-provider="excel-inputs1" finished-at="2019-09-21T13:28:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Sports uniform]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Sports UN]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Yellow T shirt]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Yellow T shirt]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Sports]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="UNF078ExcelTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="UNF078ExcelTest" duration-ms="961" started-at="2019-09-23T12:53:08Z" data-provider="UNF078excel-inputs" finished-at="2019-09-23T12:53:09Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+The data provider is trying to pass 4 parameters but the method com.training.regression.tests.UNF_78ExcelTest#UNF078ExcelTest takes 7 and TestNG is unable in inject a suitable object]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+The data provider is trying to pass 4 parameters but the method com.training.regression.tests.UNF_78ExcelTest#UNF078ExcelTest takes 7 and TestNG is unable in inject a suitable object
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1253)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1122)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 4
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1249)
+	... 17 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UNF078ExcelTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="tearDown" is-config="true" duration-ms="726" started-at="2019-09-21T13:28:01Z" finished-at="2019-09-21T13:28:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="setUp" is-config="true" duration-ms="5963" started-at="2019-09-21T13:28:02Z" finished-at="2019-09-21T13:28:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UNF078ExcelTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="UNF078ExcelTest" duration-ms="59815" started-at="2019-09-21T13:28:08Z" data-provider="excel-inputs1" finished-at="2019-09-21T13:29:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Cultural uniform]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Cultural UN]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Blazer Girls(III-VI)]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Blazer Girls(III-VI)]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Cultural uniform]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UNF078ExcelTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="tearDown" is-config="true" duration-ms="754" started-at="2019-09-21T13:29:08Z" finished-at="2019-09-21T13:29:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="setUp" is-config="true" duration-ms="6822" started-at="2019-09-21T13:29:08Z" finished-at="2019-09-21T13:29:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UNF078ExcelTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="UNF078ExcelTest" duration-ms="80614" started-at="2019-09-21T13:29:15Z" data-provider="excel-inputs1" finished-at="2019-09-21T13:30:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Weekend wear]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Weekend UN]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Red  Socks]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Red  Socks]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Weekend wear]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UNF078ExcelTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="tearDown" is-config="true" duration-ms="712" started-at="2019-09-21T13:30:36Z" finished-at="2019-09-21T13:30:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="setUp" is-config="true" duration-ms="6277" started-at="2019-09-21T13:30:36Z" finished-at="2019-09-21T13:30:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UNF078ExcelTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="UNF078ExcelTest" duration-ms="60324" started-at="2019-09-21T13:30:43Z" data-provider="excel-inputs1" finished-at="2019-09-21T13:31:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Formal uniform]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[formal UN]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Grey Shirt]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Grey Shirt]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Formal uniform]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UNF078ExcelTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.UNF_78ExcelTest@6debcae2]" name="tearDown" is-config="true" duration-ms="724" started-at="2019-09-21T13:31:43Z" finished-at="2019-09-21T13:31:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- com.training.regression.tests.UNF_78ExcelTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

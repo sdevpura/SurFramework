@@ -45,17 +45,17 @@ public class LoginDataProviders {
 	
 	@DataProvider(name = "excel-inputs1")
 	public static Object[][] getExcelData1(){
-		String fileName ="C:\\Users\\SurbhiDevpura\\Desktop\\Test Data.xlsx"; 
+		String fileName ="C:\\Users\\SurbhiDevpura\\Desktop\\Test Data_UNF_077.xlsx"; 
 		String SheetName = "Sheet1";
 		return new ApachePOIExcelRead().getExcelContent(fileName,SheetName); 
 	}
 	
-/*	@DataProvider(name = "UNF078excel-inputs")
+	@DataProvider(name = "UNF078excel-inputs")
 	public static Object[][] getExcelDataUNF078(){
-		String fileName ="C:\\Users\\SurbhiDevpura\\Desktop\\Test Data.xlsx"; 
+		String fileName ="C:\\Users\\SurbhiDevpura\\Desktop\\Test Data_UNF_078.xlsx"; 
 		String SheetName = "Sheet1";
 		return new ApachePOIExcelRead().getExcelContent(fileName,SheetName); 
-	}*/
+	}
 	
 	@DataProvider(name = "xls-inputs")
 	public Object[][] getXLSData(){
