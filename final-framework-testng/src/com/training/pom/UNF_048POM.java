@@ -33,13 +33,13 @@ public class UNF_048POM {
 		@FindBy(css="input#input-name1")  //using CSSSelector locator
 		private WebElement categoryNameTextBox;
 		
-		@FindBy(xpath="//*[@id='language1']/div[2]/div/div/div[3]/div[2]/p")
+		@FindBy(xpath="//*[@id='language1']/div[2]/div/div/div[3]/div[2]") 
 		private WebElement categoryDesc;
 		
 		@FindBy(xpath="//*[@id='input-meta-title1']")
 		private WebElement metaTagTextBox;
 		
-		@FindBy(xpath="//*[@id='input-meta-description1']")
+		@FindBy(xpath="//*[@id='input-meta-description1']") 
 		private WebElement metaTagDesc;
 		
 		@FindBy(xpath="//a[text()='Data']")
@@ -133,9 +133,9 @@ public class UNF_048POM {
 			Assert.assertEquals(textAddCatAct, textAddCatExp);
 			System.out.println(textAddCatAct+" is displayed successfully");	
 			this.categoryNameTextBox.sendKeys("Sports Uniform2");
-			//this.categoryDesc.sendKeys("Uniform for Sports");
+			this.categoryDesc.sendKeys("Uniform for Sports");
 			this.metaTagTextBox.sendKeys("Sports Uniform2");
-			//this.metaTagDesc.sendKeys("Uniform for Sports");
+			this.metaTagDesc.sendKeys("Uniform for Sports");
 			this.dataTab.click();
 			Thread.sleep(3000);
 			

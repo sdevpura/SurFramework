@@ -41,7 +41,7 @@ public class UNF_078POM {
 		@FindBy(css="input#input-name1")  //using CSSSelector locator
 		private WebElement categoryNameTextBox;
 		
-		@FindBy(xpath="//*[@id='language1']/div[2]/div/div/div[3]/div[2]/p")
+		@FindBy(xpath="//*[@id='language1']/div[2]/div/div/div[3]/div[2]")
 		private WebElement categoryDesc;
 		
 		@FindBy(xpath="//*[@id='input-meta-title1']")
