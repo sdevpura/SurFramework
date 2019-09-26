@@ -150,16 +150,16 @@ public class UNF_078POM {
 			
 		}
 		
-		public void AddNewCategories(String catName, String catMetaTag) throws InterruptedException{
+		public void AddNewCategories(String catName, String catMetaTag, String categoryDesc, String metaTagDesc) throws InterruptedException{
 			String textAddCatExp = "Add Category";
 			this.addNewCat.click();
 			String textAddCatAct = this.addCatText.getText();
 			Assert.assertEquals(textAddCatAct, textAddCatExp);
 			System.out.println(textAddCatAct+" is displayed successfully");	
 			this.categoryNameTextBox.sendKeys(catName);
-			//this.categoryDesc.sendKeys("Uniform for Sports");
+			this.categoryDesc.sendKeys(categoryDesc);
 			this.metaTagTextBox.sendKeys(catMetaTag);
-			//this.metaTagDesc.sendKeys("Uniform for Sports");
+			this.metaTagDesc.sendKeys(metaTagDesc);
 			this.dataTab.click();
 			Thread.sleep(3000);
 			
@@ -199,9 +199,9 @@ public class UNF_078POM {
 		public void AddNewProducts(String productName, String productMetaTag, String catList) throws InterruptedException{
 			this.addNewProductIcon.click();
 			this.productnNameTextBox.sendKeys(productName);
-			//this.categoryDesc.sendKeys("Uniform for Sports");
+			this.categoryDesc.sendKeys("Uniform for Sports");
 			this.metaTagTextBox.sendKeys(productMetaTag);
-			//this.metaTagDesc.sendKeys("Uniform for Sports");
+			this.metaTagDesc.sendKeys("Uniform for Sports");
 			this.dataTab.click();
 			Thread.sleep(3000);
 			this.modelName.sendKeys("SPU-03");

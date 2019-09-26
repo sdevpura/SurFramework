@@ -45,14 +45,14 @@ public class UNF_78ExcelTest {
 	}
 	
 	@Test(dataProvider = "UNF078excel-inputs", dataProviderClass = LoginDataProviders.class)
-	public void UNF078ExcelTest(String userName, String password, String catName, String catMetaTag, String productName, String productMetaTag, String catList) throws InterruptedException{
+	public void UNF078ExcelTest(String userName, String password, String catName, String catMetaTag, String categoryDesc, String metaTagDesc, String productName, String productMetaTag, String catList) throws InterruptedException{
 		UNF_078POM.sendUserName(userName);
 		UNF_078POM.sendPassword(password);
 		UNF_078POM.clickLoginBtn();
 		
 		//To add Category
 		UNF_078POM.clickCategories();
-		UNF_078POM.AddNewCategories(catName, catMetaTag);
+		UNF_078POM.AddNewCategories(catName, catMetaTag, categoryDesc, metaTagDesc);
 
 		
 		//To Add Product

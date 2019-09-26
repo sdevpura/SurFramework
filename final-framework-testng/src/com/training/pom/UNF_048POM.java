@@ -175,9 +175,9 @@ public class UNF_048POM {
 		public void AddNewProducts() throws InterruptedException{
 			this.addNewProductIcon.click();
 			this.productnNameTextBox.sendKeys("Sports Wear");
-			//this.categoryDesc.sendKeys("Uniform for Sports");
+			this.categoryDesc.sendKeys("Uniform for Sports");
 			this.metaTagTextBox.sendKeys("Sports Wear (8-10)");
-			//this.metaTagDesc.sendKeys("Uniform for Sports");
+			this.metaTagDesc.sendKeys("Uniform for Sports");
 			this.dataTab.click();
 			Thread.sleep(3000);
 			this.modelName.sendKeys("SPU-03");
